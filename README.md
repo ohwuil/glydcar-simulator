@@ -3,6 +3,11 @@
 ## Overview
 This Python application simulates the operation of GlydCar, a fictional ride-sharing service. It calculates the shortest path between two points using a breadth-first search (BFS) algorithm and simulates ride-sharing operations, including assigning rides to cars and calculating ride times and distances.
 
+## Asuumptions
+- Glydcar will idle for 3 minutes when picking up a rider to allow for rider to get situated before proceeding.  
+- Glydcar will idle for 3 minutes when dropping off a rider to allow for rider to exit the car
+- These idle times will not count towards the ride or wait time, but will count when determining when the Glydcar is next available to pick up another rider
+
 ## Features
 - **Shortest Path Calculation**: Utilizes BFS to find the shortest path between two stations.
 - **Ride Simulation**: Simulates rides based on provided start and end times, rider requests, and glydcar availability.
